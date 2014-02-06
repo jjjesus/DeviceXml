@@ -1,28 +1,36 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <system>
   <name>Audio System</name>
+  <id>s1</id>
   <rack>
+    <id>r1</id>
     <name>Input Processor</name>
     <box_list>
       <box>
+        <id>b1</id>
         <name>Audio Input</name>
         <card_list>
           <card>
-            <name>Digital Input</name>
+            <id>c1</id>
+            <name>Microphone</name>
           </card>
           <card>
-            <name>Mixer Input</name>
+            <name>Mixer</name>
+            <id>c2</id>
           </card>
         </card_list>
       </box>
       <box>
         <name>Signal Processor</name>
+        <id>b2</id>
         <card_list>
           <card>
-          <name>Enhancer</name>
+            <id>c3</id>
+            <name>Enhancer</name>
           </card>
           <card>
             <name>De-Ess Filter</name>
+            <id>c4</id>
           </card>
         </card_list>
       </box>
@@ -32,16 +40,31 @@
     <name>Output Processor</name>
     <box_list>
       <box>
+        <id>b3</id>
         <name>Audio Output</name>
         <card_list>
           <card>
+            <id>c5</id>
             <name>Recording Output</name>
           </card>
           <card>
+            <id>c6</id>
             <name>Monitor Output</name>
           </card>
         </card_list>
       </box>
     </box_list>
   </rack>
+  <connector>
+    <id>333</id>
+    <name>mike to mixer</name>
+  </connector>
+  <connector_src>
+    <connector_id>333</connector_id>
+    <card_id>c1</card_id>
+  </connector_src>
+  <connector_dst>
+    <connector_id>333</connector_id>
+    <card_id>c2</card_id>
+  </connector_dst>
 </system>

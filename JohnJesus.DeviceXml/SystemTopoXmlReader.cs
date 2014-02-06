@@ -35,6 +35,27 @@ namespace JohnJesus.DeviceXml
             {
                 Console.WriteLine("{0}", r.Element("name").Value);
             }
+
+            var connectors = XDoc.Descendants("connector");
+            var conn_sources = XDoc.Descendants("connector_src");
+            var conn_dests = XDoc.Descendants("connector_dst");
+            foreach (var c in connectors)
+            {
+                string id = c.Element("id").Value;
+                var conns = from _src in conn_sources
+                            join
+                            _dst in conn_dests
+                            on _src.Element("connector_id").Value equals _dst.Element("connector_id").Value
+                            select new
+                            {
+                                Source = _src.Element("card_id").Value,
+                                Dest = _dst.Element("card_id").Value
+                            };
+                foreach (var conn in conns)
+                {
+                    Console.WriteLine("Src:{0} Dst:{1}", conn.Source, conn.Dest);
+                }
+            }
         }
     }
 }
