@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual C# Express 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JohnJesus.DeviceXml", "JohnJesus.DeviceXml\JohnJesus.DeviceXml.csproj", "{7278E3D0-7357-4761-8108-FAAF47866F3D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JohnJesus.TryDeviceXml", "JohnJesus.TryDeviceXml\JohnJesus.TryDeviceXml.csproj", "{2C4B6077-2030-46D6-9EE3-6A57F8915B05}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7278E3D0-7357-4761-8108-FAAF47866F3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7278E3D0-7357-4761-8108-FAAF47866F3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7278E3D0-7357-4761-8108-FAAF47866F3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7278E3D0-7357-4761-8108-FAAF47866F3D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C4B6077-2030-46D6-9EE3-6A57F8915B05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C4B6077-2030-46D6-9EE3-6A57F8915B05}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C4B6077-2030-46D6-9EE3-6A57F8915B05}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C4B6077-2030-46D6-9EE3-6A57F8915B05}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
