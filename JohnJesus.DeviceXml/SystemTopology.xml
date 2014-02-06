@@ -67,4 +67,16 @@
     <connector_id>333</connector_id>
     <card_id>c2</card_id>
   </connector_dst>
+  <connector>
+    <id>334</id>
+    <name>voice enhancer</name>
+  </connector>
+  <connector_src>
+    <connector_id>334</connector_id>
+    <card_id>c3</card_id>
+  </connector_src>
+  <connector_dst>
+    <connector_id>334</connector_id>
+    <card_id>c4</card_id>
+  </connector_dst>
 </system>
