@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<system>
+  <name>Audio System</name>
+  <rack>
+    <name>Input Processor</name>
+    <box_list>
+      <box>
+        <name>Audio Input</name>
+        <card_list>
+          <card>
+            <name>Digital Input</name>
+          </card>
+          <card>
+            <name>Mixer Input</name>
+          </card>
+        </card_list>
+      </box>
+      <box>
+        <name>Signal Processor</name>
+        <card_list>
+          <card>
+          <name>Enhancer</name>
+          </card>
+          <card>
+            <name>De-Ess Filter</name>
+          </card>
+        </card_list>
+      </box>
+    </box_list>
+  </rack>
+  <rack>
+    <name>Output Processor</name>
+    <box_list>
+      <box>
+        <name>Audio Output</name>
+        <card_list>
+          <card>
+            <name>Recording Output</name>
+          </card>
+          <card>
+            <name>Monitor Output</name>
+          </card>
+        </card_list>
+      </box>
+    </box_list>
+  </rack>
+</system>

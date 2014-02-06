@@ -11,7 +11,9 @@ namespace JohnJesus.TryDeviceXml
     {
         static void Main(string[] args)
         {
-            Class1 myClass = new Class1();
+            SystemTopoXmlReader xmlReader = new SystemTopoXmlReader();
+            xmlReader.LoadEmbeddedXml();
+            xmlReader.CreateObjects();
             Console.WriteLine("Hit any key to continue");
             Console.ReadKey();
         }
