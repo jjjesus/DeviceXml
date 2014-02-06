@@ -30,7 +30,6 @@ namespace JohnJesus.DeviceXml
         }
         public void CreateObjects()
         {
-            var connectors = XDoc.Descendants("connector");
             var conns = from _src in XDoc.Descendants("connector_src")
                         join
                         _dst in XDoc.Descendants("connector_dst")
