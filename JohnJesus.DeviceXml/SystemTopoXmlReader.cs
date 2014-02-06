@@ -36,7 +36,6 @@ namespace JohnJesus.DeviceXml
                         on _src.Element("connector_id").Value equals _dst.Element("connector_id").Value
                         select new
                         {
-                            //Name = c.Element("name").Value,
                             Source = _src.Element("card_id").Value,
                             Dest = _dst.Element("card_id").Value
                         };
@@ -44,12 +43,10 @@ namespace JohnJesus.DeviceXml
             {
                 var src = (from _card in XDoc.Descendants("card")
                             where _card.Element("id").Value == conn.Source
-                            select _card)
-                          .First();
+                            select _card).Single();
                 var dst = (from _card in XDoc.Descendants("card")
                            where _card.Element("id").Value == conn.Dest
-                           select _card)
-                          .First();
+                           select _card).Single();
                 Console.WriteLine("Src:{0} Dst:{1}", 
                     src.Element("name").Value, dst.Element("name").Value);
             }
