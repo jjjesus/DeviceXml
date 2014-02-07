@@ -5,11 +5,11 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>9.0.30729</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{7278E3D0-7357-4761-8108-FAAF47866F3D}</ProjectGuid>
+    <ProjectGuid>{70359ED6-4EC5-466F-A67F-2F12C3407D59}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>JohnJesus.DeviceXml</RootNamespace>
-    <AssemblyName>JohnJesus.DeviceXml</AssemblyName>
+    <RootNamespace>JohnJesus.DeviceModel</RootNamespace>
+    <AssemblyName>JohnJesus.DeviceModel</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -45,19 +45,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="SystemTopoXmlReader.cs" />
+    <Compile Include="Box.cs" />
+    <Compile Include="Card.cs" />
+    <Compile Include="Connector.cs" />
+    <Compile Include="Rack.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="SystemTopology.xml">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\JohnJesus.DeviceModel\JohnJesus.DeviceModel.csproj">
-      <Project>{70359ED6-4EC5-466F-A67F-2F12C3407D59}</Project>
-      <Name>JohnJesus.DeviceModel</Name>
-    </ProjectReference>
+    <Compile Include="System.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
