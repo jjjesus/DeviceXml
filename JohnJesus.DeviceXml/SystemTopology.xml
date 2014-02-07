@@ -15,6 +15,14 @@
             <name>Microphone</name>
           </card>
           <card>
+            <id>c11</id>
+            <name>Guitar</name>
+          </card>
+          <card>
+            <id>c12</id>
+            <name>Bass Guitar</name>
+          </card>
+          <card>
             <name>Mixer</name>
             <id>c2</id>
           </card>
@@ -55,28 +63,38 @@
       </box>
     </box_list>
   </rack>
-  <connector>
-    <id>333</id>
-    <name>mike to mixer</name>
-  </connector>
-  <connector_src>
-    <connector_id>333</connector_id>
-    <card_id>c1</card_id>
-  </connector_src>
-  <connector_dst>
-    <connector_id>333</connector_id>
-    <card_id>c2</card_id>
-  </connector_dst>
-  <connector>
-    <id>334</id>
-    <name>voice enhancer</name>
-  </connector>
-  <connector_src>
-    <connector_id>334</connector_id>
-    <card_id>c3</card_id>
-  </connector_src>
-  <connector_dst>
-    <connector_id>334</connector_id>
-    <card_id>c4</card_id>
-  </connector_dst>
+  <connector_list>
+    <connector>
+      <id>333</id>
+      <name>mike to mixer</name>
+    </connector>
+    <connector_src>
+      <connector_id>333</connector_id>
+      <card_id>c1</card_id>
+    </connector_src>
+    <connector_dst>
+      <connector_id>333</connector_id>
+      <card_id>c2</card_id>
+    </connector_dst>
+    <connector>
+      <id>334</id>
+      <name>voice enhancer</name>
+    </connector>
+    <connector_src>
+      <connector_id>334</connector_id>
+      <card_id>c3</card_id>
+    </connector_src>
+    <connector_dst>
+      <connector_id>334</connector_id>
+      <card_id>c4</card_id>
+    </connector_dst>
+  </connector_list>
+  <role_list>
+    <role>
+      <name>Mixer</name>
+      <fulfilled_by>c2</fulfilled_by>
+      <fulfilled_for>c11</fulfilled_for>
+      <fulfilled_for>c12</fulfilled_for>
+    </role>
+  </role_list>
 </system>

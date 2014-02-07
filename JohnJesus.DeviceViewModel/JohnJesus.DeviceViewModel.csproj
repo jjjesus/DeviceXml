@@ -5,11 +5,11 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>9.0.30729</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{7278E3D0-7357-4761-8108-FAAF47866F3D}</ProjectGuid>
+    <ProjectGuid>{3A79475C-97CA-4351-AD82-B2C39F0F1F43}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>JohnJesus.DeviceXml</RootNamespace>
-    <AssemblyName>JohnJesus.DeviceXml</AssemblyName>
+    <RootNamespace>JohnJesus.DeviceViewModel</RootNamespace>
+    <AssemblyName>JohnJesus.DeviceViewModel</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -45,13 +45,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="SystemTopoXmlReader.cs" />
+    <Compile Include="BaseViewModel.cs" />
+    <Compile Include="BoxViewModel.cs" />
+    <Compile Include="CardViewModel.cs" />
+    <Compile Include="ConnectorViewModel.cs" />
+    <Compile Include="MainWindowViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="SystemTopology.xml">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </EmbeddedResource>
+    <Compile Include="RackViewModel.cs" />
+    <Compile Include="SystemViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\JohnJesus.DeviceModel\JohnJesus.DeviceModel.csproj">
