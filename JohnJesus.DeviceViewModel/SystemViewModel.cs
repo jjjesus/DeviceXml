@@ -10,16 +10,16 @@ namespace JohnJesus.DeviceViewModel
 {
     public class SystemViewModel
     {
-        public List<RackViewModel> RackViewModelList { get; set; }
+        public List<RackViewModel> ChildViewModelList { get; set; }
 
         public SystemViewModel()
         {
             DeviceDataService.Load();
-            RackViewModelList = new List<RackViewModel>();
+            ChildViewModelList = new List<RackViewModel>();
 
             foreach (Rack rack in Rack.RackList)
             {
-                RackViewModelList.Add(new RackViewModel(rack));
+                ChildViewModelList.Add(new RackViewModel(rack));
             }
         }
     }
