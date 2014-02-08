@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 
 using JohnJesus.DeviceModel;
+using JohnJesus.DeviceRepository;
 
 namespace JohnJesus.DeviceViewModel
 {
@@ -19,6 +20,7 @@ namespace JohnJesus.DeviceViewModel
 
         public SystemViewModel()
         {
+            Repository.Load();
             RackList = new List<Rack>()
             {
                 new Rack("RACK-1"),
