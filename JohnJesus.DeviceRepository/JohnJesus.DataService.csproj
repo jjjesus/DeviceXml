@@ -49,6 +49,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\JohnJesus.DeviceModel\JohnJesus.DeviceModel.csproj">
+      <Project>{70359ED6-4EC5-466F-A67F-2F12C3407D59}</Project>
+      <Name>JohnJesus.DeviceModel</Name>
+    </ProjectReference>
     <ProjectReference Include="..\JohnJesus.DeviceXml\JohnJesus.DeviceXml.csproj">
       <Project>{7278E3D0-7357-4761-8108-FAAF47866F3D}</Project>
       <Name>JohnJesus.DeviceXml</Name>

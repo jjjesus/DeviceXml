@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 
 using JohnJesus.DeviceXml;
+using JohnJesus.DeviceModel;
 
 namespace JohnJesus.DataService
 {
@@ -14,6 +15,17 @@ namespace JohnJesus.DataService
             SystemTopoXmlReader xmlReader = new SystemTopoXmlReader();
             xmlReader.LoadEmbeddedXml();
             xmlReader.CreateObjects();
+            // TODO: Temporary load from hard-coded arrays
+            LoadFromArrays();
+        }
+
+        private static void LoadFromArrays()
+        {
+            Rack.RackList = new List<Rack>()
+            {
+                new Rack("RACK-1"),
+                new Rack("RACK-2"),
+            };
         }
     }
 }
