@@ -8,7 +8,7 @@ using JohnJesus.DataService;
 
 namespace JohnJesus.DeviceViewModel
 {
-    public class BoxViewModel
+    public class BoxViewModel : BaseViewModel
     {
         Box _box;
         public string Name

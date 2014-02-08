@@ -7,7 +7,7 @@ using JohnJesus.DeviceModel;
 
 namespace JohnJesus.DeviceViewModel
 {
-    public class ConnectorViewModel
+    public class ConnectorViewModel : BaseViewModel
     {
     }
 }

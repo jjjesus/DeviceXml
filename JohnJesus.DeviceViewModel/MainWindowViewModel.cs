@@ -5,7 +5,7 @@ using System.Text;
 
 namespace JohnJesus.DeviceViewModel
 {
-    public class MainWindowViewModel
+    public class MainWindowViewModel : BaseViewModel
     {
     }
 }

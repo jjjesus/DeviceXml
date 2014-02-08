@@ -31,7 +31,7 @@ namespace JohnJesus.DataService
                 new Box("Box-1", Rack.RackList[0]),
                 new Box("Box-2", Rack.RackList[0]),
 
-                new Box("Box-3", Rack.RackList[1]),
+                new Box("NO_BOX", Rack.RackList[1]),
                 new Box("Box-4", Rack.RackList[1]),
                 new Box("Box-5", Rack.RackList[1]),
             };

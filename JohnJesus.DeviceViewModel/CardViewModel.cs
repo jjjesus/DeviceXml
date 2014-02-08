@@ -7,7 +7,7 @@ using JohnJesus.DeviceModel;
 
 namespace JohnJesus.DeviceViewModel
 {
-    public class CardViewModel
+    public class CardViewModel : BaseViewModel
     {
         Card _card;
         public string Name

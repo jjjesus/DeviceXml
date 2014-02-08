@@ -8,9 +8,9 @@ using JohnJesus.DataService;
 
 namespace JohnJesus.DeviceViewModel
 {
-    public class RackViewModel
+    public class RackViewModel : BaseViewModel
     {
-        public List<BoxViewModel> ChildViewModelList { get; set; }
+        public List<BaseViewModel> ChildViewModelList { get; set; }
 
         Rack _rack;
         public string Name
@@ -20,12 +20,21 @@ namespace JohnJesus.DeviceViewModel
         public RackViewModel(Rack rack)
         {
             this._rack = rack;
-            ChildViewModelList = new List<BoxViewModel>();
+            ChildViewModelList = new List<BaseViewModel>();
             List<Box> myBoxList = DeviceDataService.GetMyBoxes(_rack.Name);
 
             foreach (Box box in myBoxList)
             {
-                ChildViewModelList.Add(new BoxViewModel(box));
+                if (box.Name != "NO_BOX")
+                    ChildViewModelList.Add(new BoxViewModel(box));
+                else
+                {
+                    List<Card> myCardList = DeviceDataService.GetMyCards(box.Name);
+                    foreach (Card card in myCardList)
+                    {
+                        ChildViewModelList.Add(new CardViewModel(card));
+                    }
+                }
             }
         }
     }

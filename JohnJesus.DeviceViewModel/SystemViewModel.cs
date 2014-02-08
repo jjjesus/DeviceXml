@@ -8,7 +8,7 @@ using JohnJesus.DataService;
 
 namespace JohnJesus.DeviceViewModel
 {
-    public class SystemViewModel
+    public class SystemViewModel : BaseViewModel
     {
         public List<RackViewModel> ChildViewModelList { get; set; }
 
