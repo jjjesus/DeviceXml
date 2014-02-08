@@ -5,9 +5,9 @@ using System.Text;
 
 using JohnJesus.DeviceXml;
 
-namespace JohnJesus.DeviceRepository
+namespace JohnJesus.DataService
 {
-    public class Repository
+    public class DeviceDataService
     {
         static public void Load()
         {

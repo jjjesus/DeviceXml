@@ -8,8 +8,8 @@
     <ProjectGuid>{FC7A4C72-CFD0-4BFC-8D43-5A24BB2EE0C6}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>JohnJesus.DeviceRepository</RootNamespace>
-    <AssemblyName>JohnJesus.DeviceRepository</AssemblyName>
+    <RootNamespace>JohnJesus.DataService</RootNamespace>
+    <AssemblyName>JohnJesus.DataService</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -45,7 +45,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Repository.cs" />
+    <Compile Include="DeviceDataService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

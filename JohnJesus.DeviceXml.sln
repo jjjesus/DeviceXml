@@ -7,14 +7,16 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JohnJesus.TryDeviceXml", "J
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JohnJesus.DeviceView", "JohnJesus.DeviceTool\JohnJesus.DeviceView.csproj", "{5015BE84-0A57-43E0-A6B9-D9E4A85501B0}"
 	ProjectSection(ProjectDependencies) = postProject
+		{FC7A4C72-CFD0-4BFC-8D43-5A24BB2EE0C6} = {FC7A4C72-CFD0-4BFC-8D43-5A24BB2EE0C6}
 		{7278E3D0-7357-4761-8108-FAAF47866F3D} = {7278E3D0-7357-4761-8108-FAAF47866F3D}
+		{70359ED6-4EC5-466F-A67F-2F12C3407D59} = {70359ED6-4EC5-466F-A67F-2F12C3407D59}
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JohnJesus.DeviceModel", "JohnJesus.DeviceModel\JohnJesus.DeviceModel.csproj", "{70359ED6-4EC5-466F-A67F-2F12C3407D59}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JohnJesus.DeviceViewModel", "JohnJesus.DeviceViewModel\JohnJesus.DeviceViewModel.csproj", "{3A79475C-97CA-4351-AD82-B2C39F0F1F43}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JohnJesus.DeviceRepository", "JohnJesus.DeviceRepository\JohnJesus.DeviceRepository.csproj", "{FC7A4C72-CFD0-4BFC-8D43-5A24BB2EE0C6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JohnJesus.DataService", "JohnJesus.DeviceRepository\JohnJesus.DataService.csproj", "{FC7A4C72-CFD0-4BFC-8D43-5A24BB2EE0C6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

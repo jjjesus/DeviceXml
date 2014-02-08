@@ -59,9 +59,9 @@
       <Project>{70359ED6-4EC5-466F-A67F-2F12C3407D59}</Project>
       <Name>JohnJesus.DeviceModel</Name>
     </ProjectReference>
-    <ProjectReference Include="..\JohnJesus.DeviceRepository\JohnJesus.DeviceRepository.csproj">
+    <ProjectReference Include="..\JohnJesus.DeviceRepository\JohnJesus.DataService.csproj">
       <Project>{FC7A4C72-CFD0-4BFC-8D43-5A24BB2EE0C6}</Project>
-      <Name>JohnJesus.DeviceRepository</Name>
+      <Name>JohnJesus.DataService</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
