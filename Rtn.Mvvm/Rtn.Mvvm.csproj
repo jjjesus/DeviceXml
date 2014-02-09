@@ -1,17 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>9.0.30729</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{3A79475C-97CA-4351-AD82-B2C39F0F1F43}</ProjectGuid>
+    <ProjectGuid>{8C903A51-76BA-4406-BE95-BFE5A77E4B0B}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>JohnJesus.DeviceViewModel</RootNamespace>
-    <AssemblyName>JohnJesus.DeviceViewModel</AssemblyName>
+    <RootNamespace>Rtn.Mvvm</RootNamespace>
+    <AssemblyName>Rtn.Mvvm</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -31,44 +35,21 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="PresentationCore" />
     <Reference Include="System" />
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
-    <Reference Include="System.Xml.Linq">
-      <RequiredTargetFramework>3.5</RequiredTargetFramework>
-    </Reference>
-    <Reference Include="System.Data.DataSetExtensions">
-      <RequiredTargetFramework>3.5</RequiredTargetFramework>
-    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BaseViewModel.cs" />
-    <Compile Include="BoxViewModel.cs" />
-    <Compile Include="CardViewModel.cs" />
-    <Compile Include="ConnectorViewModel.cs" />
-    <Compile Include="DeviceDetailsViewModel.cs" />
-    <Compile Include="MainWindowViewModel.cs" />
-    <Compile Include="Messages.cs" />
+    <Compile Include="IColleague.cs" />
+    <Compile Include="Mediator.cs" />
+    <Compile Include="MultiDictionary.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RackViewModel.cs" />
-    <Compile Include="SystemViewModel.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\JohnJesus.DeviceModel\JohnJesus.DeviceModel.csproj">
-      <Project>{70359ED6-4EC5-466F-A67F-2F12C3407D59}</Project>
-      <Name>JohnJesus.DeviceModel</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\JohnJesus.DeviceRepository\JohnJesus.DataService.csproj">
-      <Project>{FC7A4C72-CFD0-4BFC-8D43-5A24BB2EE0C6}</Project>
-      <Name>JohnJesus.DataService</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Rtn.Mvvm\Rtn.Mvvm.csproj">
-      <Project>{8C903A51-76BA-4406-BE95-BFE5A77E4B0B}</Project>
-      <Name>Rtn.Mvvm</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

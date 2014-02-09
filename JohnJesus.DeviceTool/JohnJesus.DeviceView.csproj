@@ -63,6 +63,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="DeviceDetails.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="TreeSystemView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -81,6 +85,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DeviceDetails.xaml.cs">
+      <DependentUpon>DeviceDetails.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -111,6 +118,10 @@
     <ProjectReference Include="..\JohnJesus.DeviceViewModel\JohnJesus.DeviceViewModel.csproj">
       <Project>{3A79475C-97CA-4351-AD82-B2C39F0F1F43}</Project>
       <Name>JohnJesus.DeviceViewModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Rtn.Mvvm\Rtn.Mvvm.csproj">
+      <Project>{8C903A51-76BA-4406-BE95-BFE5A77E4B0B}</Project>
+      <Name>Rtn.Mvvm</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

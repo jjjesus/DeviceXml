@@ -1,0 +1,32 @@
+﻿<UserControl x:Class="JohnJesus.DeviceView.DeviceDetails"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:viewmodel="clr-namespace:JohnJesus.DeviceViewModel;assembly=JohnJesus.DeviceViewModel"
+    Height="300" Width="300">
+    <ScrollViewer>
+        <StackPanel Background="Aqua" DataContext="{Binding SelectedViewModel}">
+            <StackPanel.Resources>
+                <DataTemplate DataType="{x:Type viewmodel:RackViewModel}">
+                    <StackPanel Orientation="Horizontal" Background="AntiqueWhite">
+                        <TextBlock Text="{Binding Name}" />
+                    </StackPanel>
+                </DataTemplate>
+                <DataTemplate DataType="{x:Type viewmodel:BoxViewModel}">
+                    <StackPanel Orientation="Horizontal" Background="Beige">
+                        <TextBlock Text="{Binding Name}" />
+                    </StackPanel>
+                </DataTemplate>
+                <DataTemplate DataType="{x:Type viewmodel:CardViewModel}">
+                    <StackPanel Orientation="Horizontal" Background="BlanchedAlmond">
+                        <TextBlock Text="{Binding Name}" />
+                    </StackPanel>
+                </DataTemplate>
+                <DataTemplate DataType="{x:Type viewmodel:DeviceDetailsViewModel}">
+                    <StackPanel Orientation="Horizontal" Background="Lavender">
+                        <TextBlock Text="{Binding Name}" />
+                    </StackPanel>
+                </DataTemplate>
+            </StackPanel.Resources>
+        </StackPanel>
+    </ScrollViewer>
+</UserControl>
